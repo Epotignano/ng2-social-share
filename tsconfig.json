@@ -1,23 +1,24 @@
+
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "sourceMap": true,
-    "noEmitHelpers": true,
-    "noImplicitAny": true,
-    "declaration": false
-  },
-  "exclude": [
-    "node_modules"
-  ],
-  "files": [
-    "./share.directive.ts",
-    "./pinterestParams.ts",
-    "./facebookParams.ts",
-    "./googlePlusParams.ts",
-    "./twitterParams.ts"
-  ]
+    "version": "1.5.0-alpha",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": true,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "outDir": "../js"
+    },
+    "filesGlob": [
+        "./*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./ng2-social-share.ts",
+        "./typings/node/node.d.ts",
+        "./typings/tsd.d.ts"
+    ]
 }

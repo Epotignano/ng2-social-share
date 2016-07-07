@@ -1,0 +1,18 @@
+{
+  "name": "ng2-social-share",
+  "version": "0.0.1",
+  "description": "Angular2 social share module, share urls and content on social networks such as facebook, google+, twitter, pinterest and so on -",
+  "main": "share.directive",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "social",
+    "share",
+    "angular2",
+    "angularjs2",
+    "directive"
+  ],
+  "author": "Emiliano Potignano",
+  "license": "ISC"
+}

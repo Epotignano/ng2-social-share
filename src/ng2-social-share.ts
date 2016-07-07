@@ -12,8 +12,8 @@ export class CeiboShare {
     @Input() twitter : TwitterParams;
     @Input() googlePlus : GooglePlusParams;
     @Input() pinterest : PinterestParams;
-    @Input() shareWidth;
-    @Input() shareHeight;
+    @Input() shareWidth: string;
+    @Input() shareHeight: string;
 
 
   private sharers = {
@@ -227,10 +227,10 @@ export class CeiboShare {
                   constructor() {}
 
 
-  private urlSharer(sharer) {
+  private urlSharer(sharer: any) {
             var p = sharer.params || {},
                 keys = Object.keys(p),
-                i,
+                i: any,
                 str = keys.length > 0 ? '?' : '';
             for (i = 0; i < keys.length; i++) {
                 if (str !== '?') {
@@ -260,7 +260,7 @@ export class CeiboShare {
 
 
 private getSharer(){
-    var _sharer;
+    var _sharer: any = {};
     if(this.facebook){
         _sharer= this.sharers['facebook']
         _sharer.params = this.facebook

@@ -1,6 +1,6 @@
 {
   "name": "ng2-social-share",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Angular2 social share module, share urls and content on social networks such as facebook, google+, twitter, pinterest and so on -",
   "main": "share.directive.js",
   "scripts": {

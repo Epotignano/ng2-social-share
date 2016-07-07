@@ -1,18 +1,19 @@
 {
   "name": "ng2-social-share",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Angular2 social share module, share urls and content on social networks such as facebook, google+, twitter, pinterest and so on -",
   "main": "ng2-social-share.js",
   "scripts": {
+    "prepublish": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
 
+  },
   "dependencies": {
     "ts-npm-module": "^1.0.5"
   },
-
   "devDependencies": {
-    "@angular/core": "^2.0.0-rc.3"
+    "@angular/core": "^2.0.0-rc.3",
+    "typescript": "^1.8.10"
   },
   "keywords": [
     "social",
@@ -21,15 +22,17 @@
     "angularjs2",
     "directive"
   ],
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/Epotignano/ng2-social-share"
   },
-
-   "author": {
+  "author": {
     "name": "Emiliano Potignano",
     "email": "epotignano@ceiboit.com",
     "url": "https://github.com/epotignano"
   },
-  "license": "MIT"
+  "license": "MIT",
+
+  "typings": "./src/ng2-social-share.d.ts"
+
 }

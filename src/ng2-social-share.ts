@@ -3,6 +3,7 @@ import { FacebookParams } from './facebookParams'
 import { TwitterParams } from './twitterParams';
 import {  GooglePlusParams } from './googlePlusParams';
 import { PinterestParams } from './pinterestParams';
+import { LinkedinParams } from './linkedinParams';
 
 @Directive({
   selector: '[ceiboShare]'
@@ -12,6 +13,7 @@ export class CeiboShare {
     @Input() twitter : TwitterParams;
     @Input() googlePlus : GooglePlusParams;
     @Input() pinterest : PinterestParams;
+    @Input() linkedin : LinkedinParams;
     @Input() shareWidth: string;
     @Input() shareHeight: string;
 
@@ -280,8 +282,10 @@ private getSharer(){
         _sharer.params = this.pinterest;
     }
 
-
-
+    if(this.linkedin){
+        _sharer = this.sharers['linkedin'];
+        _sharer.params = this.linkedin;
+    }
 
     return _sharer;
 

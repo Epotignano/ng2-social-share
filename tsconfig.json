@@ -12,6 +12,10 @@
     },
     "files": [
         "typings/index.d.ts",
-        "./src/ng2-social-share.ts"
+        "./src/ng2-social-share.ts",
+        "./src/facebookParams.ts",
+        "./src/googlePlusParams.ts",
+        "./src/twitterParams.ts",
+        "./src/pinterestParams.ts"
     ]
 }

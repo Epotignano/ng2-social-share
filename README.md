@@ -18,6 +18,9 @@ import { CeiboShare } from 'ng2-social-share';
 
 })
 export class myFancyComponent implements OnInit {
+//vars used only for example, put anything you want :)
+public repoUrl = 'https://github.com/Epotignano/ng2-social-share';
+public imageUrl = 'https://avatars2.githubusercontent.com/u/10674541?v=3&s=200';
 
 constructor() { }
 
@@ -63,6 +66,7 @@ export declare class PinterestParams {
  -->
     <button ceiboShare  [facebook]="{u: repoUrl}">Facebook</button>
     <button ceiboShare  [linkedIn]="{url:repoUrl}">Linkedin</button>
+    <button ceiboShare  [googlePlus]="{url:repoUrl}">Google Plus</button>
     <button ceiboShare  [twitter]="{url:repoUrl, text:'Checkout this awesome ng2 social share directive', hashtags:'angular2, social, ceiboIT'}">Twitter</button>
     <button ceiboShare [pinterest]="{url:repoUrl, media: imageUrl, description:'Checkout this awesome angular2 directive'}">Pinterest</button>
 

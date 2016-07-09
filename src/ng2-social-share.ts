@@ -13,7 +13,7 @@ export class CeiboShare {
     @Input() twitter : TwitterParams;
     @Input() googlePlus : GooglePlusParams;
     @Input() pinterest : PinterestParams;
-    @Input() linkedin : LinkedinParams;
+    @Input() linkedIn : LinkedinParams;
     @Input() shareWidth: string;
     @Input() shareHeight: string;
 
@@ -282,9 +282,9 @@ private getSharer(){
         _sharer.params = this.pinterest;
     }
 
-    if(this.linkedin){
+    if(this.linkedIn){
         _sharer = this.sharers['linkedin'];
-        _sharer.params = this.linkedin;
+        _sharer.params = this.linkedIn;
     }
 
     return _sharer;

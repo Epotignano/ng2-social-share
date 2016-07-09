@@ -1,6 +1,10 @@
 # Node generated files
 node_modules
 npm-debug.log
+
+#Example
+src/example
+demo
 # OS generated files
 Thumbs.db
 .DS_Store

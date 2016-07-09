@@ -55,6 +55,13 @@ export declare class PinterestParams {
     description: string;
 }
 
+export class TwitterParams {
+    text: string;
+    url: string;
+    hashtags: string;
+    via: string;
+}
+
 ```
 
 ###In your component html file

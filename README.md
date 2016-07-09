@@ -83,14 +83,11 @@ export class TwitterParams {
  ```
 
 
-and in your component template you have to do 
 
-button
 
-ROADMAP
+###ROADMAP
 
     Support for:
-    Linkedin
     Email
     Whatsapp
     Telegram

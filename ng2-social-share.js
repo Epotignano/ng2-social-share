@@ -131,15 +131,15 @@ var CeiboShare = (function () {
                 str += keys[i] + '=' + encodeURIComponent(p[keys[i]]);
             }
         }
-        sharer.shareUrl += str;
+        var url = sharer.shareUrl + str;
         if (!sharer.isLink) {
-            var popWidth = sharer.width || 600, popHeight = sharer.height || 480, left = window.innerWidth / 2 - popWidth / 2 + window.screenX, top = window.innerHeight / 2 - popHeight / 2 + window.screenY, popParams = 'scrollbars=no, width=' + popWidth + ', height=' + popHeight + ', top=' + top + ', left=' + left, newWindow = window.open(sharer.shareUrl, '', popParams);
+            var popWidth = sharer.width || 600, popHeight = sharer.height || 480, left = window.innerWidth / 2 - popWidth / 2 + window.screenX, top = window.innerHeight / 2 - popHeight / 2 + window.screenY, popParams = 'scrollbars=no, width=' + popWidth + ', height=' + popHeight + ', top=' + top + ', left=' + left, newWindow = window.open(url, '', popParams);
             if (window.focus) {
                 newWindow.focus();
             }
         }
         else {
-            window.location.href = sharer.shareUrl;
+            window.location.href = url;
         }
     };
     CeiboShare.prototype.getSharer = function () {

@@ -1,3 +1,6 @@
 export class FacebookParams {
-    u: string
+    u: string;
+    picture:string;
+    description:string;
+    title:string;
 }

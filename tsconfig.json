@@ -16,6 +16,7 @@
         "./src/facebookParams.ts",
         "./src/googlePlusParams.ts",
         "./src/twitterParams.ts",
-        "./src/pinterestParams.ts"
+        "./src/pinterestParams.ts",
+        "./src/whatsappParams.ts"
     ]
 }

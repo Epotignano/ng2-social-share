@@ -1,4 +1,4 @@
-#Usage 
+# Usage 
 
 ```javascript
 npm install --save ng2-social-share
@@ -32,7 +32,7 @@ ngOnInit() {
 }
 ```
 
-###Accepted params
+### Accepted params
 
 
 ```typescript
@@ -64,7 +64,7 @@ export class TwitterParams {
 
 ```
 
-###In your component html file
+### In your component html file
  
  ```html
 
@@ -85,7 +85,7 @@ export class TwitterParams {
 
 
 
-###ROADMAP
+### ROADMAP
 
     Support for:
     Email

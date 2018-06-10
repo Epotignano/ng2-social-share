@@ -34,7 +34,7 @@ var CeiboShare = (function () {
                 /*params: {
                     text: this.title + ' ' + this.url
                 },*/
-                isLink: true
+                // isLink: true
             },
             telegram: {
                 shareUrl: 'tg://msg_url',
@@ -160,6 +160,10 @@ var CeiboShare = (function () {
             _sharer = this.sharers['pinterest'];
             _sharer.params = this.pinterest;
         }
+        if ( this.whatsapp){
+          _sharer = this.sharers['whatsapp'];
+          _sharer.params = this.whatsapp;
+        }
         return _sharer;
     };
     CeiboShare.prototype.share = function () {
@@ -183,6 +187,9 @@ var CeiboShare = (function () {
     __decorate([
         core_1.Input()
     ], CeiboShare.prototype, "pinterest");
+    __decorate([
+      core_1.Input()
+    ], CeiboShare.prototype, "whatsapp");
     __decorate([
         core_1.Input()
     ], CeiboShare.prototype, "shareWidth");
